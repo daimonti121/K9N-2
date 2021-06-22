@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif; }
 
 .header {
-  background: url("/src/img/header-top--background.png"), #fff; }
+  background: url("../img/header-top--background.png"), #fff; }
   .header .top-header .container--max-width {
     max-width: 1442px; }
   .header .top-header__block {
@@ -157,7 +157,7 @@ body {
   .header .header__mobile {
     display: none; }
     .header .header__mobile .header__mobile-inner .mobile-menu {
-      background: url("/src/img/header-top--background.png");
+      background: url("../img/header-top--background.png");
       position: fixed;
       width: 100%;
       top: 0px;
