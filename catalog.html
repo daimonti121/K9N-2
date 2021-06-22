@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукции</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="top-header">
+            <div class="container-fluid container--max-width">
+                <div class="top-header__block">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html"> 
+                            <img class="logo__img" src="img/logo.png" alt="no-image">
+                            <span class="logo__span">Локомотив Вашего бизнеса</span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form class="search__form">
+                            <input class="search__input" id="search" name="search" type="search" placeholder="Найти товары">
+                            <input class="search__input-submit" type="submit" value="Поиск">
+                        </form>
+                        <div class="search__text">Например: <a class="search__link" href="#">втулка шасси</a></div>
+                    </div>
+                    <div class="contact">
+                        <p class="contact__text">Позвоните нам</p>
+                        <a class="contact__tell" href="tel:+83435465550">8 3435 46-55-50</a>
+                        <a class="contact__email" href="mailto:465550@mail.ru">465550@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container--max-width">
+                <div class="header__menu-inner">
+                    <div class="container--max-width-center">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__link" href="index.html">Главная</a>
+                                </li>
+                                <li class="menu__list-item menu__list--active">
+                                    <a class="menu__link menu__link--active" href="#">Каталог продукции</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__link" href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <div class="container-fluid">
+                <div class="header__mobile-inner">
+                    <div class="mobile-menu">
+                        <div class="mobile-menu__logo">
+                            <a class="mobile-menu__logo-link" href="index.html">
+                                <img class="mobile-menu__logo-img" src="img/logo-Mobile.png" alt="no-image">
+                            </a>
+                        </div>
+                        <div class="mobile-menu__contact">
+                            <a class="mobile-menu__contact-link" href="tel:+83435465550">
+                                <img class="mobile-menu__contact-img" src="img/header-icon.png" alt="mobile-menu">
+                            </a>
+                        </div>
+                        <div class="mobile-menu__btn">
+                            <span class="mobile-menu__btn-span"></span>
+                            <span class="mobile-menu__btn-span"></span>
+                            <span class="mobile-menu__btn-span"></span>
+                        </div>
+                        <div class="mobile-menu__nav">
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item">
+                                    <a class="mobile-menu__link" href="index.html">Главная</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a class="mobile-menu__link mobile-menu__link--active" href="catalog.html">Католог продукции</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a class="mobile-menu__link" href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>                    
+                </div>                
+            </div>
+            <div class="mobile-search">
+                <div class="container--max-width">
+                    <div class="mobile-search-inner">
+                        <div class="search">
+                            <form class="search__form">
+                                <input class="search__input-mobile" id="search" name="search" type="search" placeholder="Найти товары">
+                                <button class="search__input-submit" type="submit"><img class="search__input-img" src="img/header__button-search.png" alt="no-image"></button>
+                            </form>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="shop">
+        <div class="container">
+            <div class="shop-iner">
+                <div class="wrapper">
+                    <span class="wrapper__link">
+                        <a class="wrapper__link-a"href="index.html">Главная</a>
+                        <pre>/    Каталог продукции</pre>
+                    </span>
+                </div>
+                <div class="shop__title">Каталог продукции</div>            
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="table__row" scope="col"></th>
+                        <th class="table__row" scope="col">Подшибники</th>                   
+                        <th class="table__row table__row--rigth table__row--rigth-first" scope="col">Цена</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="table__row-td" scope="row">KUK-699975</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                    </tr>
+                    <tr>
+                        <th class="table__row-td" scope="row">KUK-699974</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                    </tr>
+                    <tr>
+                        <th class="table__row-td" scope="row">KUK-699973</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                    </tr>
+                    <tr>
+                        <th class="table__row-td" scope="row">KUK-699972</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                    </tr>
+                    <tr>
+                        <th class="table__row-td" scope="row">KUK-699971</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                    </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                        <th class="table__row" scope="col"></th>
+                        <th class="table__row" scope="col">Ремни приводные</th>                   
+                        <th class="table__row table__row--rigth table__row--rigth-first" scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699975</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699974</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699973</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699972</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699971</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                        <th class="table__row" scope="col"></th>
+                        <th class="table__row" scope="col">Фильтры</th>                   
+                        <th class="table__row table__row--rigth table__row--rigth-first" scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699975</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699974</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699973</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699972</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699971</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                        <th class="table__row" scope="col"></th>
+                        <th class="table__row" scope="col">Ручной инструмент</th>                   
+                        <th class="table__row table__row--rigth table__row--rigth-first" scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699975</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699974</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699973</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699972</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699971</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                        <th class="table__row" scope="col"></th>
+                        <th class="table__row" scope="col">Метизная продукция</th>                   
+                        <th class="table__row table__row--rigth table__row--rigth-first" scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699975</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699974</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699973</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699972</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699971</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                        <th class="table__row" scope="col"></th>
+                        <th class="table__row" scope="col">Электрооборудование</th>                   
+                        <th class="table__row table__row--rigth table__row--rigth-first" scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699975</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699974</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699973</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699972</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">45 334 Р</td>
+                        </tr>
+                        <tr>
+                        <th class="table__row-td" scope="row">KUK-699971</th>
+                        <td class="table__row-td"><a href="product1.html">Специальная смазка для шпинделей</a></td>                    
+                        <td class="table__row-td table__row--rigth">20 200 Р</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="shop-mobile">
+                <div class="shop-mobile__table">                                       
+                    <div class="tabs">                        
+                        <table class="mobile-table mobile-table__block tabcontent" id="1">
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975 2131231</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Подшибники</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>  
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Подшибники</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Подшибники</td>
+                                    <td><a href="#">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td>23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Подшибники</td>
+                                    <td class="last"><a href="#">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Подшибники</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Подшибники</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>                          
+                        </table>  
+                        <table class="mobile-table mobile-table__block tabcontent" id="2">
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ремни приводные</td>
+                                    <td><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>  
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ремни приводные</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ремни приводные</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ремни приводные</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ремни приводные</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ремни приводные</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>                          
+                        </table>  
+                        <table class="mobile-table mobile-table__block tabcontent" id="3">
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Фильтры</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>  
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Фильтры</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Фильтры</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Фильтры</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Фильтры</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Фильтры</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>                          
+                        </table> 
+                        <table class="mobile-table mobile-table__block tabcontent" id="4">
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ручной инструмент</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>  
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ручной инструмент</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ручной инструмент</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ручной инструмент</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ручной инструмент</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Ручной инструмент</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>                          
+                        </table>  
+                        <table class="mobile-table mobile-table__block tabcontent" id="5">
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Метизная продукция</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>  
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Метизная продукция</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Метизная продукция</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Метизная продукция</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Метизная продукция</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Метизная продукция</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>                          
+                        </table>  
+                        <table class="mobile-table mobile-table__block tabcontent" id="6">
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Оборудование</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>  
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Оборудование</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Оборудование</td>
+                                    <td><a href="#">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Оборудование</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Оборудование</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td>23 000 Р</td>
+                                </tr>                            
+                            </tbody>     
+                            <thead>
+                                <tr>
+                                    <th class="mobile-table--gray-color"></th>
+                                    <th class="last">KUK-699975</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-table--gray-color">Оборудование</td>
+                                    <td class="last"><a href="product1.html">
+                                        Специальная смазка<br> для шпинделей
+                                    </a></td>
+                                </tr>
+                                <tr class="mobile-table_block--border">
+                                    <td class="mobile-table--gray-color">Цена</td>
+                                    <td class="last">23 000 Р</td>
+                                </tr>                            
+                            </tbody>                          
+                        </table>                         
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen">1</button>
+                        <button class="tablinks" onclick="openCity(event, '2')">2</button>
+                        <button class="tablinks" onclick="openCity(event, '3')">3</button>
+                        <button class="tablinks" onclick="openCity(event, '4')">4</button>
+                        <button class="tablinks" onclick="openCity(event, '5')">5</button>
+                        <button class="tablinks" onclick="openCity(event, '6')">6</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container--max-width">
+            <div class="advantages-inner">
+                <div class="avantages__slider">
+                    <div class="avantages__slider-responsive">
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo1.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Только оригинальный <br> и сертифицированный <br>товар</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo2.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Официальная гарантия 
+                                на обслуживание любого инструмента</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo3.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Возможность заказа инструмента у завода изготовителя</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo4.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Большие запасы товара в розничном магазине и на складе в Москве</div>
+                        </div> 
+                        <div class="avantages__slider-block">
+                            <div class="avantages__image">
+                                <img class="avantages__img" src="img/promo5.png" alt="no-image">
+                            </div>
+                            <div class="avantages__text">Доставка до любой транспортной компании в Москве бесплатно </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="feedback">
+        <div class="container">
+            <div class="feedback-inner row">                
+                <div class="feedback__info col-md-5 col-12">
+                    <div class="feedback__info-title">Обратная связь</div>
+                    <div class="feedback__info-text">Адрес:</div>
+                    <div class="feedback__info-details">г.Москва, ул. Московская д.109, оф. 300</div>
+                    <div class="feedback__info-text">Телефон:</div>
+                    <div class="feedback__info-details">8 3435 46-55-50</div>
+                    <div class="feedback__info-text">E-mail:</div>
+                    <div class="feedback__info-details feedback__info-details--padding">465550@mail.ru</div>
+                </div>
+                <div class="feedback__backinfo col-md-6 offset-md-1  col-12">
+                    <form class="feedback__form" action="">
+                        <div class="feedback__form-group form-group">
+                            <label class="feedback__label" for="validationCustom01">Введите имя</label>
+                            <input class="feedback__input-control form-control" type="text" id="validationCustom01" placeholder="Имя" required>
+                          </div>                        
+                        <div class="feedback__form-group form-group">                           
+                            <input class="feedback__input-control form-control" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Телефон или e-mail">                            
+                        </div>                        
+                        <div class="feedback__form-group form-group">                            
+                            <textarea class="feedback__input-textarea form-control" id="exampleFormControlTextarea1" placeholder="Cообщение"></textarea>
+                        </div>                    
+                        <div class="row">
+                            <div class="form-check form-check--margin col-lg-7 col-md-col-12">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    Я согласен с условиями<br>
+                                    <a href="#">обработки персональных данных</a>
+                                </label>
+                            </div>
+                            <div class="col-md-3 col-12 feedback__button-submit-col">
+                                <button class="btn feedback__button-submit" type="submit">
+                                    <span class="feedback__button-span">Отправить</span>
+                                </button> 
+                            </div>
+                        </div>                                              
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container--max-width">
+            <div class="footer-inner">
+                <nav class="footer-inner__nav">
+                    <div class="footer-inner__logo">
+                        <a href="index.html">
+                            <img class="footer-inner__logo-img" src="img/logo-bottom.png" alt="no-image">
+                        </a>
+                    </div>
+                    <div class="footer-inner__menu">
+                        <ul class="footer-inner__ul">
+                            <li class="footer-inner__li">
+                                <a href="index.html" class="footer-inner__link">Главная</a>
+                            </li>
+                            <li class="footer-inner__li">
+                                <a href="#" class="footer-inner__link">Каталог продукции</a>
+                            </li>
+                            <li class="footer-inner__li">
+                                <a href="contacts.html" class="footer-inner__link">Контакты</a>
+                            </li>                            
+                        </ul>
+                    </div>
+                    <div class="footer-inner__info">
+                        <h4 class="footer-inner__text">Все права защищены ©  2019</h4>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script>
+        let menuBtn = document.querySelector('.mobile-menu__btn');        
+        let menu = document.querySelector('.mobile-menu__nav');
+        let body = document.querySelector('.body');     
+
+        menuBtn.addEventListener('click', function(){
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            body.classList.toggle('active'); 
+            
+        })
+       
+    </script>     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>  
+    <script type="text/javascript">
+        $('.avantages__slider-responsive').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1174,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 730,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+      </script>
+      <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>
